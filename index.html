@@ -1,160 +1,655 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yash Tiwari</title>
 
- 
-  <link rel="stylesheet" href="Style.css" />
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Yash Tiwari</title>
+
+    <link rel="stylesheet"
+        href="Style.css">
+
 </head>
 
 <body>
 
-  <div class="background-shape"></div>
+    <!-- BACKGROUND -->
 
-  <div class="container">
+    <div class="bg-grid"></div>
 
-    <!-- PROFILE CARD -->
-    <div class="profile-card">
+    <!-- CONTAINER -->
 
-      <img src="profile.png" alt="Yash Tiwari" class="profile-img" />
+    <div class="container">
 
-      <h1>Yash Tiwari</h1>
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
 
-      <p class="designation">
-        MTS(C) • Dept of Posts
-      </p>
+        <section class="hero">
 
-      <p class="govt">
-        Ministry of Communications • Govt Of India
-      </p>
+            <!-- LOGO NOTCH -->
 
-      <div class="tagline">
-        Connecting People With Trust
-      </div>
+            <div class="top-notch">
+
+                <div class="notch-logo">
+
+                    <img src="Kyran.png"
+                        alt="KYRAN Digital">
+
+                </div>
+
+            </div>
+
+            <!-- COVER SLIDER -->
+
+            <div class="cover-slider"
+                id="coverSlider">
+
+                <div class="slides">
+
+                    <img src="covers/cover1.png"
+                        class="slide active">
+
+                    <img src="covers/cover2.png"
+                        class="slide">
+
+                    <img src="covers/cover3.png"
+                        class="slide">
+
+                    <img src="covers/cover4.png"
+                        class="slide">
+
+                    <img src="covers/cover5.png"
+                        class="slide">
+
+                    <img src="covers/cover6.png"
+                        class="slide">
+
+                </div>
+
+                <!-- OVERLAY -->
+
+                <div class="cover-overlay"></div>
+
+                <!-- DOTS -->
+
+                <div class="slider-dots">
+
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+
+                </div>
+
+            </div>
+
+            <!-- COVER POPUP -->
+
+            <div class="cover-popup"
+                id="coverPopup">
+
+                <span class="close-cover">
+                    &times;
+                </span>
+
+                <div class="popup-slider">
+
+                    <img src="covers/cover1.png"
+                        class="popup-slide active">
+
+                    <img src="covers/cover2.png"
+                        class="popup-slide">
+
+                    <img src="covers/cover3.png"
+                        class="popup-slide">
+
+                    <img src="covers/cover4.png"
+                        class="popup-slide">
+
+                    <img src="covers/cover5.png"
+                        class="popup-slide">
+
+                    <img src="covers/cover6.png"
+                        class="popup-slide">
+
+                </div>
+
+            </div>
+
+            <!-- PROFILE SECTION -->
+
+            <div class="profile-section">
+
+                <div class="profile-card">
+
+                    <!-- PROFILE IMAGE -->
+
+                    <div class="profile-wrapper">
+
+                        <img src="profile.png"
+                            alt="Yash Tiwari"
+                            class="profile-img"
+                            id="profileImage">
+
+                    </div>
+
+                    <!-- PROFILE POPUP -->
+
+                    <div class="profile-popup"
+                        id="profilePopup">
+
+                        <span class="close-profile">
+                            &times;
+                        </span>
+
+                        <img src="profile.png"
+                            class="popup-profile-img">
+
+                    </div>
+
+                    <!-- DETAILS -->
+
+                    <div class="profile-details">
+
+                        <h1>
+                            Yash Tiwari
+                        </h1>
+
+                        <p class="designation">
+                            MTS(C) • Dept of Posts
+                        </p>
+
+                        <p class="company">
+                            Ministry of Communications <br>
+                            Govt Of India
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             CONTENT
+        ========================== -->
+
+        <section class="content">
+
+            <!-- ABOUT -->
+
+            <div class="card">
+
+                <h2>About Me</h2>
+
+                <p>
+                    Currently working as MTS(C)
+                    in Department of Posts under
+                    Ministry of Communications,
+                    Govt Of India.
+                </p>
+
+            </div>
+
+            <!-- CONNECT -->
+
+            <div class="card">
+
+                <h2>Connect</h2>
+
+                <!-- CALL -->
+
+                <a href="tel:+919680138985"
+                    class="link-card">
+
+                    <div class="link-left">
+
+                        <div class="link-icon">
+
+                            <svg viewBox="0 0 24 24"
+                                fill="none">
+
+                                <path
+                                    d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.92C10.51 20.92 2 12.41 2 1.92C2 1.37 2.45 0.92 3 0.92H6C6.55 0.92 7 1.37 7 1.92C7 3.68 7.29 5.38 7.85 6.96C7.98 7.33 7.89 7.74 7.61 8.02L5.72 9.91C7.09 12.62 9.3 14.83 12.01 16.2L13.9 14.31C14.18 14.03 14.59 13.94 14.96 14.07C16.54 14.63 18.24 14.92 20 14.92C20.55 14.92 21 15.37 21 15.92Z"
+                                    fill="white"/>
+
+                            </svg>
+
+                        </div>
+
+                        <div class="link-text">
+
+                            <h4>Call</h4>
+
+                            <p>
+                                +91 9680138985
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <!-- EMAIL -->
+
+                <a href="mailto:yasht5349@gmail.com"
+                    class="link-card">
+
+                    <div class="link-left">
+
+                        <div class="link-icon">
+
+                            <svg viewBox="0 0 24 24"
+                                fill="none">
+
+                                <rect x="3"
+                                    y="5"
+                                    width="18"
+                                    height="14"
+                                    rx="2"
+                                    stroke="white"
+                                    stroke-width="2"/>
+
+                                <path d="M3 7L12 13L21 7"
+                                    stroke="white"
+                                    stroke-width="2"/>
+
+                            </svg>
+
+                        </div>
+
+                        <div class="link-text">
+
+                            <h4>Email</h4>
+
+                            <p>
+                                yasht5349@gmail.com
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <!-- WHATSAPP -->
+
+                <a href="https://wa.me/919680138985"
+                    class="link-card">
+
+                    <div class="link-left">
+
+                        <div class="link-icon">
+
+                            <svg viewBox="0 0 32 32"
+                                fill="none">
+
+                                <path
+                                    d="M16.04 3C8.84 3 3 8.76 3 15.88C3 18.36 3.72 20.76 5.08 22.84L3 29L9.36 27C11.36 28.08 13.64 28.64 16.04 28.64C23.24 28.64 29.08 22.88 29.08 15.76C29.08 8.64 23.24 3 16.04 3Z"
+                                    fill="white"/>
+
+                            </svg>
+
+                        </div>
+
+                        <div class="link-text">
+
+                            <h4>WhatsApp</h4>
+
+                            <p>
+                                Chat Directly
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <!-- INSTAGRAM -->
+
+                <a href="https://instagram.com/yashtiwari333"
+                    class="link-card">
+
+                    <div class="link-left">
+
+                        <div class="link-icon">
+
+                            <svg viewBox="0 0 24 24"
+                                fill="none">
+
+                                <rect x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="5"
+                                    stroke="white"
+                                    stroke-width="2"/>
+
+                                <circle cx="12"
+                                    cy="12"
+                                    r="4"
+                                    stroke="white"
+                                    stroke-width="2"/>
+
+                                <circle cx="17.5"
+                                    cy="6.5"
+                                    r="1"
+                                    fill="white"/>
+
+                            </svg>
+
+                        </div>
+
+                        <div class="link-text">
+
+                            <h4>Instagram</h4>
+
+                            <p>
+                                @yashtiwari333
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <!-- SNAPCHAT -->
+
+                <a href="https://snapchat.com/add/yashvision"
+                    class="link-card">
+
+                    <div class="link-left">
+
+                        <div class="link-icon">
+
+                            <svg viewBox="0 0 24 24"
+                                fill="none">
+
+                                <path
+                                    d="M12 2C8.69 2 6 4.69 6 8V11C6 12.2 5.3 13.2 4.2 13.7C4.07 13.76 4 13.89 4 14.03C4 14.26 4.19 14.45 4.42 14.45C5.73 14.45 6.81 15.34 7.14 16.57C7.2 16.79 7.4 16.94 7.63 16.94H16.37C16.6 16.94 16.8 16.79 16.86 16.57C17.19 15.34 18.27 14.45 19.58 14.45C19.81 14.45 20 14.26 20 14.03C20 13.89 19.93 13.76 19.8 13.7C18.7 13.2 18 12.2 18 11V8C18 4.69 15.31 2 12 2Z"
+                                    fill="white"/>
+
+                            </svg>
+
+                        </div>
+
+                        <div class="link-text">
+
+                            <h4>Snapchat</h4>
+
+                            <p>
+                                yashvision
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- FLOAT BUTTON -->
+
+        <a href="Yash_Tiwari.vcf"
+            download
+            class="floating-save">
+
+            <span>
+                Add to <br>
+                Contact
+            </span>
+
+            <div class="plus-circle">
+                +
+            </div>
+
+        </a>
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <h3>
+                © 2026 Yash Tiwari
+            </h3>
+
+            <p>
+                Designed & Developed by
+                <span>KYRAN Digital</span>
+            </p>
+
+        </footer>
 
     </div>
 
-    <!-- CONTACT SECTION -->
-<div class="contact-box">
+    <!-- JAVASCRIPT -->
 
-  <!-- CALL -->
-  <a href="tel:+919680138985" class="contact-card">
+    <script>
 
-    <div class="icon orange">
+        const slides =
+        document.querySelectorAll(".slide");
 
-      <svg viewBox="0 0 24 24" fill="none">
-        <path d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.92C10.51 20.92 2 12.41 2 1.92C2 1.37 2.45 0.92 3 0.92H6C6.55 0.92 7 1.37 7 1.92C7 3.68 7.29 5.38 7.85 6.96C7.98 7.33 7.89 7.74 7.61 8.02L5.72 9.91C7.09 12.62 9.3 14.83 12.01 16.2L13.9 14.31C14.18 14.03 14.59 13.94 14.96 14.07C16.54 14.63 18.24 14.92 20 14.92C20.55 14.92 21 15.37 21 15.92Z"
-          fill="white"/>
-      </svg>
+        const popupSlides =
+        document.querySelectorAll(".popup-slide");
 
-    </div>
+        const dots =
+        document.querySelectorAll(".dot");
 
-    <div class="details">
-      <h3>Call</h3>
-      <p>9680138985</p>
-    </div>
+        const coverSlider =
+        document.getElementById("coverSlider");
 
-  </a>
+        let current = 0;
 
-  <!-- WHATSAPP -->
-  <a href="https://wa.me/919680138985" class="contact-card">
+        let autoSlide;
 
-    <div class="icon green">
+        let startX = 0;
 
-      <svg viewBox="0 0 32 32" fill="none">
-        <path d="M16.04 3C8.84 3 3 8.76 3 15.88C3 18.36 3.72 20.76 5.08 22.84L3 29L9.36 27C11.36 28.08 13.64 28.64 16.04 28.64C23.24 28.64 29.08 22.88 29.08 15.76C29.08 8.64 23.24 3 16.04 3Z"
-          fill="white"/>
-      </svg>
+        let endX = 0;
 
-    </div>
+        let moved = false;
 
-    <div class="details">
-      <h3>WhatsApp</h3>
-      <p>9680138985</p>
-    </div>
+        /* SHOW SLIDE */
 
-  </a>
+        function showSlide(index){
 
-  <!-- EMAIL -->
-  <a href="mailto:yasht5349@gmail.com" class="contact-card">
+            slides.forEach(slide => {
+                slide.classList.remove("active");
+            });
 
-    <div class="icon gold">
+            popupSlides.forEach(slide => {
+                slide.classList.remove("active");
+            });
 
-      <svg viewBox="0 0 24 24" fill="none">
-        <path d="M3 5H21C21.55 5 22 5.45 22 6V18C22 18.55 21.55 19 21 19H3C2.45 19 2 18.55 2 18V6C2 5.45 2.45 5 3 5Z"
-          stroke="white"
-          stroke-width="2"/>
+            dots.forEach(dot => {
+                dot.classList.remove("active");
+            });
 
-        <path d="M22 6L12 13L2 6"
-          stroke="white"
-          stroke-width="2"/>
-      </svg>
+            slides[index].classList.add("active");
 
-    </div>
+            popupSlides[index].classList.add("active");
 
-    <div class="details">
-      <h3>Email</h3>
-      <p>yasht5349@gmail.com</p>
-    </div>
+            dots[index].classList.add("active");
+        }
 
-  </a>
+        /* NEXT */
 
-  <!-- INSTAGRAM -->
-  <a href="https://instagram.com/yashtiwari333" class="contact-card">
+        function nextSlide(){
 
-    <div class="icon insta">
+            current++;
 
-      <svg viewBox="0 0 24 24" fill="none">
-        <rect x="3" y="3" width="18" height="18" rx="5"
-          stroke="white"
-          stroke-width="2"/>
+            if(current >= slides.length){
+                current = 0;
+            }
 
-        <circle cx="12" cy="12" r="4"
-          stroke="white"
-          stroke-width="2"/>
+            showSlide(current);
+        }
 
-        <circle cx="17.5" cy="6.5" r="1"
-          fill="white"/>
-      </svg>
+        /* PREV */
 
-    </div>
+        function prevSlide(){
 
-    <div class="details">
-      <h3>Instagram</h3>
-      <p>@yashtiwari333</p>
-    </div>
+            current--;
 
-  </a>
+            if(current < 0){
+                current = slides.length - 1;
+            }
 
-  <!-- SNAPCHAT -->
-  <a href="https://snapchat.com/add/yashvision" class="contact-card">
+            showSlide(current);
+        }
 
-    <div class="icon snap">
+        /* AUTO SLIDER */
 
-      <svg viewBox="0 0 24 24" fill="none">
-        <path d="M12 2C8.69 2 6 4.69 6 8V11C6 12.2 5.3 13.2 4.2 13.7C4.07 13.76 4 13.89 4 14.03C4 14.26 4.19 14.45 4.42 14.45C5.73 14.45 6.81 15.34 7.14 16.57C7.2 16.79 7.4 16.94 7.63 16.94H16.37C16.6 16.94 16.8 16.79 16.86 16.57C17.19 15.34 18.27 14.45 19.58 14.45C19.81 14.45 20 14.26 20 14.03C20 13.89 19.93 13.76 19.8 13.7C18.7 13.2 18 12.2 18 11V8C18 4.69 15.31 2 12 2Z"
-          fill="black"/>
-      </svg>
+        function startSlider(){
 
-    </div>
+            autoSlide = setInterval(() => {
 
-    <div class="details">
-      <h3>Snapchat</h3>
-      <p>yashvision</p>
-    </div>
+                nextSlide();
 
-  </a>
+            }, 3200);
 
-</div>
+        }
 
-    <!-- SAVE CONTACT -->
-    <a href="Yash_Tiwari.vcf" download class="save-btn">
-      Save Contact
-    </a>
+        function stopSlider(){
 
-  </div>
+            clearInterval(autoSlide);
+
+        }
+
+        startSlider();
+
+        /* DOT CLICK */
+
+        dots.forEach((dot, index) => {
+
+            dot.addEventListener("click", () => {
+
+                current = index;
+
+                showSlide(current);
+
+            });
+
+        });
+
+        /* TOUCH START */
+
+        coverSlider.addEventListener(
+        "touchstart",
+        (e) => {
+
+            stopSlider();
+
+            moved = false;
+
+            startX =
+            e.touches[0].clientX;
+
+        });
+
+        /* TOUCH MOVE */
+
+        coverSlider.addEventListener(
+        "touchmove",
+        (e) => {
+
+            endX =
+            e.touches[0].clientX;
+
+            moved = true;
+
+        });
+
+        /* TOUCH END */
+
+        coverSlider.addEventListener(
+        "touchend",
+        () => {
+
+            let distance =
+            startX - endX;
+
+            if(distance > 50){
+
+                nextSlide();
+
+            }
+
+            else if(distance < -50){
+
+                prevSlide();
+
+            }
+
+            startSlider();
+
+        });
+
+        /* PROFILE POPUP */
+
+        const profileImg =
+        document.getElementById("profileImage");
+
+        const profilePopup =
+        document.getElementById("profilePopup");
+
+        const closeProfile =
+        document.querySelector(".close-profile");
+
+        profileImg.onclick = () => {
+
+            profilePopup.classList.add("active");
+
+        };
+
+        closeProfile.onclick = () => {
+
+            profilePopup.classList.remove("active");
+
+        };
+
+        /* COVER POPUP */
+
+        const coverPopup =
+        document.getElementById("coverPopup");
+
+        const closeCover =
+        document.querySelector(".close-cover");
+
+        coverSlider.addEventListener(
+        "click",
+        () => {
+
+            if(!moved){
+
+                coverPopup.classList.add("active");
+
+            }
+
+        });
+
+        closeCover.onclick = () => {
+
+            coverPopup.classList.remove("active");
+
+        };
+
+    </script>
 
 </body>
+
 </html>
