@@ -11,7 +11,11 @@
     <title>Yash Tiwari</title>
 
     <link rel="stylesheet"
-        href="Style.css">
+        href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -19,7 +23,10 @@
 
     <!-- BACKGROUND -->
 
-    <div class="bg-grid"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
 
     <!-- CONTAINER -->
 
@@ -92,8 +99,10 @@
 
             <!-- COVER POPUP -->
 
-            <div class="cover-popup"
-                id="coverPopup">
+            <dialog class="cover-popup"
+                id="coverPopup"
+                closedby="any"
+                aria-label="Cover Gallery">
 
                 <span class="close-cover">
                     &times;
@@ -121,7 +130,7 @@
 
                 </div>
 
-            </div>
+            </dialog>
 
             <!-- PROFILE SECTION -->
 
@@ -142,17 +151,20 @@
 
                     <!-- PROFILE POPUP -->
 
-                    <div class="profile-popup"
-                        id="profilePopup">
+                    <dialog class="profile-popup"
+                        id="profilePopup"
+                        closedby="any"
+                        aria-label="Profile Photo">
 
                         <span class="close-profile">
                             &times;
                         </span>
 
                         <img src="profile.png"
-                            class="popup-profile-img">
+                            class="popup-profile-img"
+                            alt="Yash Tiwari Profile Photo Large">
 
-                    </div>
+                    </dialog>
 
                     <!-- DETAILS -->
 
@@ -206,226 +218,235 @@
 
                 <h2>Connect</h2>
 
-                <!-- CALL -->
+                <div class="link-grid">
 
-                <a href="tel:+919680138985"
-                    class="link-card">
+                    <!-- CALL -->
 
-                    <div class="link-left">
+                    <a href="tel:+919680138985"
+                        class="link-card">
 
-                        <div class="link-icon">
+                        <div class="link-left">
 
-                           <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 24 24"
-     fill="none"
-     stroke="white"
-     stroke-width="2"
-     stroke-linecap="round"
-     stroke-linejoin="round">
+                            <div class="link-icon">
 
-    <path d="M22 16.9v3a2 2 0 0 1-2.2 2
-             19.9 19.9 0 0 1-8.7-3.1
-             19.5 19.5 0 0 1-6-6
-             A19.9 19.9 0 0 1 2.1 4.2
-             2 2 0 0 1 4.1 2h3
-             a2 2 0 0 1 2 1.7
-             c.1.9.3 1.8.6 2.6
-             a2 2 0 0 1-.5 2.1L8 9.6
-             a16 16 0 0 0 6.4 6.4
-             l1.2-1.2
-             a2 2 0 0 1 2.1-.5
-             c.8.3 1.7.5 2.6.6
-             A2 2 0 0 1 22 16.9Z"/>
-</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="white"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
 
-                        </div>
+        <path d="M22 16.9v3a2 2 0 0 1-2.2 2
+                 19.9 19.9 0 0 1-8.7-3.1
+                 19.5 19.5 0 0 1-6-6
+                 A19.9 19.9 0 0 1 2.1 4.2
+                 2 2 0 0 1 4.1 2h3
+                 a2 2 0 0 1 2 1.7
+                 c.1.9.3 1.8.6 2.6
+                 a2 2 0 0 1-.5 2.1L8 9.6
+                 a16 16 0 0 0 6.4 6.4
+                 l1.2-1.2
+                 a2 2 0 0 1 2.1-.5
+                 c.8.3 1.7.5 2.6.6
+                 A2 2 0 0 1 22 16.9Z"/>
+    </svg>
 
-                        <div class="link-text">
 
-                            <h4>Call</h4>
+                            </div>
 
-                            <p>
-                                +91 9680138985
-                            </p>
+                            <div class="link-text">
 
-                        </div>
+                                <h4>Call</h4>
 
-                    </div>
+                                <p>
+                                    +91 9680138985
+                                </p>
 
-                </a>
-
-                <!-- EMAIL -->
-
-                <a href="mailto:yasht5349@gmail.com"
-                    class="link-card">
-
-                    <div class="link-left">
-
-                        <div class="link-icon">
-
-                            <svg viewBox="0 0 24 24"
-                                fill="none">
-
-                                <rect x="3"
-                                    y="5"
-                                    width="18"
-                                    height="14"
-                                    rx="2"
-                                    stroke="white"
-                                    stroke-width="2"/>
-
-                                <path d="M3 7L12 13L21 7"
-                                    stroke="white"
-                                    stroke-width="2"/>
-
-                            </svg>
+                            </div>
 
                         </div>
 
-                        <div class="link-text">
+                    </a>
 
-                            <h4>Email</h4>
+                    <!-- EMAIL -->
 
-                            <p>
-                                yasht5349@gmail.com
-                            </p>
+                    <a href="mailto:yasht5349@gmail.com"
+                        class="link-card">
 
-                        </div>
+                        <div class="link-left">
 
-                    </div>
+                            <div class="link-icon">
 
-                </a>
+                                <svg viewBox="0 0 24 24"
+                                    fill="none">
 
-                <!-- WHATSAPP -->
+                                    <rect x="3"
+                                        y="5"
+                                        width="18"
+                                        height="14"
+                                        rx="2"
+                                        stroke="white"
+                                        stroke-width="2"/>
 
-                <a href="https://wa.me/919680138985"
-                    class="link-card">
+                                    <path d="M3 7L12 13L21 7"
+                                        stroke="white"
+                                        stroke-width="2"/>
 
-                    <div class="link-left">
+                                </svg>
 
-                        <div class="link-icon">
-<svg viewBox="0 0 32 32" width="22" height="22" fill="white">
-  <path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L0 32l8.3-2.2c2.3 1.3 4.9 2 7.7 2h.1c8.6 0 15.6-7 15.6-15.6C31.6 7.4 24.6.4 16 .4zm0 28.5c-2.5 0-4.9-.7-7-2l-.5-.3-4.9 1.3 1.3-4.8-.3-.5c-1.4-2.2-2.1-4.7-2.1-7.3C2.5 8.6 8.6 2.5 16 2.5s13.5 6.1 13.5 13.5S23.4 28.9 16 28.9zm7.4-10.1c-.4-.2-2.2-1.1-2.5-1.2-.3-.1-.5-.2-.7.2-.2.4-.8 1.2-1 1.4-.2.2-.3.2-.7.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2 0-.5-.1-.7-.1-.2-.7-1.8-1-2.5-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5.1.8.4 1.5.6 2 .8.8.2 1.5.2 2.1.1.6-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/>
-</svg>
-                        </div>
+                            </div>
 
-                        <div class="link-text">
+                            <div class="link-text">
 
-                            <h4>WhatsApp</h4>
+                                <h4>Email</h4>
 
-                            <p>
-                                Chat Directly
-                            </p>
+                                <p>
+                                    yasht5349@gmail.com
+                                </p>
 
-                        </div>
-
-                    </div>
-
-                </a>
-
-                <!-- INSTAGRAM -->
-
-                <a href="https://instagram.com/yashtiwari333"
-                    class="link-card">
-
-                    <div class="link-left">
-
-                        <div class="link-icon">
-
-                            <svg viewBox="0 0 24 24"
-                                fill="none">
-
-                                <rect x="3"
-                                    y="3"
-                                    width="18"
-                                    height="18"
-                                    rx="5"
-                                    stroke="white"
-                                    stroke-width="2"/>
-
-                                <circle cx="12"
-                                    cy="12"
-                                    r="4"
-                                    stroke="white"
-                                    stroke-width="2"/>
-
-                                <circle cx="17.5"
-                                    cy="6.5"
-                                    r="1"
-                                    fill="white"/>
-
-                            </svg>
+                            </div>
 
                         </div>
 
-                        <div class="link-text">
+                    </a>
 
-                            <h4>Instagram</h4>
+                    <!-- WHATSAPP -->
 
-                            <p>
-                                @yashtiwari333
-                            </p>
+                    <a href="https://wa.me/919680138985"
+                        class="link-card">
 
-                        </div>
+                        <div class="link-left">
 
-                    </div>
+                            <div class="link-icon">
 
-                </a>
+                                <svg viewBox="0 0 32 32" width="22" height="22" fill="white">
+      <path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L0 32l8.3-2.2c2.3 1.3 4.9 2 7.7 2h.1c8.6 0 15.6-7 15.6-15.6C31.6 7.4 24.6.4 16 .4zm0 28.5c-2.5 0-4.9-.7-7-2l-.5-.3-4.9 1.3 1.3-4.8-.3-.5c-1.4-2.2-2.1-4.7-2.1-7.3C2.5 8.6 8.6 2.5 16 2.5s13.5 6.1 13.5 13.5S23.4 28.9 16 28.9zm7.4-10.1c-.4-.2-2.2-1.1-2.5-1.2-.3-.1-.5-.2-.7.2-.2.4-.8 1.2-1 1.4-.2.2-.3.2-.7.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2 0-.5-.1-.7-.1-.2-.7-1.8-1-2.5-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5.1.8.4 1.5.6 2 .8.8.2 1.5.2 2.1.1.6-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/>
+    </svg>
+             
 
-                <!-- SNAPCHAT -->
+                            </div>
 
-                <a href="https://snapchat.com/add/yashvision"
-                    class="link-card">
+                            <div class="link-text">
 
-                    <div class="link-left">
+                                <h4>WhatsApp</h4>
 
-                        <div class="link-icon">
+                                <p>
+                                    Chat Directly
+                                </p>
 
-                            <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 24 24"
-     fill="none"
-     stroke="white"
-     stroke-width="1.7"
-     stroke-linecap="round"
-     stroke-linejoin="round">
-
-  <path d="
-    M12 2.8
-    C8.9 2.8 6.4 5.2 6.4 8.3
-    V10.1
-    C6.4 11.2 5.8 12.1 4.9 12.6
-    C4.5 12.8 4.3 13.1 4.3 13.5
-    C4.3 14 4.7 14.4 5.2 14.5
-    C6.3 14.7 7.1 15.1 7.6 16
-    C8 16.7 8.5 17 9.1 17
-    C9.8 17 10.2 17.3 10.5 17.8
-    C10.8 18.3 11.3 18.6 12 18.6
-    C12.7 18.6 13.2 18.3 13.5 17.8
-    C13.8 17.3 14.2 17 14.9 17
-    C15.5 17 16 16.7 16.4 16
-    C16.9 15.1 17.7 14.7 18.8 14.5
-    C19.3 14.4 19.7 14 19.7 13.5
-    C19.7 13.1 19.5 12.8 19.1 12.6
-    C18.2 12.1 17.6 11.2 17.6 10.1
-    V8.3
-    C17.6 5.2 15.1 2.8 12 2.8
-    Z"/>
-</svg>
-                        </div>
-
-                        <div class="link-text">
-
-                            <h4>Snapchat</h4>
-
-                            <p>
-                                yashvision
-                            </p>
+                            </div>
 
                         </div>
 
-                    </div>
+                    </a>
 
-                </a>
+                    <!-- INSTAGRAM -->
+
+                    <a href="https://instagram.com/yashtiwari333"
+                        class="link-card">
+
+                        <div class="link-left">
+
+                            <div class="link-icon">
+
+                                <svg viewBox="0 0 24 24"
+                                    fill="none">
+
+                                    <rect x="3"
+                                        y="3"
+                                        width="18"
+                                        height="18"
+                                        rx="5"
+                                        stroke="white"
+                                        stroke-width="2"/>
+
+                                    <circle cx="12"
+                                        cy="12"
+                                        r="4"
+                                        stroke="white"
+                                        stroke-width="2"/>
+
+                                    <circle cx="17.5"
+                                        cy="6.5"
+                                        r="1"
+                                        fill="white"/>
+
+                                </svg>
+
+                            </div>
+
+                            <div class="link-text">
+
+                                <h4>Instagram</h4>
+
+                                <p>
+                                    @yashtiwari333
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <!-- SNAPCHAT -->
+
+                    <a href="https://snapchat.com/add/yashvision"
+                        class="link-card">
+
+                        <div class="link-left">
+
+                            <div class="link-icon">
+
+                               <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="white"
+         stroke-width="1.7"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+
+      <path d="
+        M12 2.8
+        C8.9 2.8 6.4 5.2 6.4 8.3
+        V10.1
+        C6.4 11.2 5.8 12.1 4.9 12.6
+        C4.5 12.8 4.3 13.1 4.3 13.5
+        C4.3 14 4.7 14.4 5.2 14.5
+        C6.3 14.7 7.1 15.1 7.6 16
+        C8 16.7 8.5 17 9.1 17
+        C9.8 17 10.2 17.3 10.5 17.8
+        C10.8 18.3 11.3 18.6 12 18.6
+        C12.7 18.6 13.2 18.3 13.5 17.8
+        C13.8 17.3 14.2 17 14.9 17
+        C15.5 17 16 16.7 16.4 16
+        C16.9 15.1 17.7 14.7 18.8 14.5
+        C19.3 14.4 19.7 14 19.7 13.5
+        C19.7 13.1 19.5 12.8 19.1 12.6
+        C18.2 12.1 17.6 11.2 17.6 10.1
+        V8.3
+        C17.6 5.2 15.1 2.8 12 2.8
+        Z"/>
+    </svg>
+
+                            </div>
+
+                            <div class="link-text">
+
+                                <h4>Snapchat</h4>
+
+                                <p>
+                                    yashvision
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
 
             </div>
 
@@ -434,7 +455,7 @@
         <!-- FLOAT BUTTON -->
 
         <a href="contact.vcf"
-            download
+            download="Yash_Tiwari.vcf"
             class="floating-save">
 
             <span>
@@ -458,7 +479,7 @@
 
             <p>
                 Designed & Developed by
-                <span>KYRAN Digital</span>
+                <span><a href="https://kyrandigital.com/" target="_blank" rel="noopener">KYRAN Digital</a></span>
             </p>
 
         </footer>
@@ -640,13 +661,13 @@
 
         profileImg.onclick = () => {
 
-            profilePopup.classList.add("active");
+            profilePopup.showModal();
 
         };
 
         closeProfile.onclick = () => {
 
-            profilePopup.classList.remove("active");
+            profilePopup.close();
 
         };
 
@@ -664,7 +685,7 @@
 
             if(!moved){
 
-                coverPopup.classList.add("active");
+                coverPopup.showModal();
 
             }
 
@@ -672,9 +693,28 @@
 
         closeCover.onclick = () => {
 
-            coverPopup.classList.remove("active");
+            coverPopup.close();
 
         };
+
+        /* LIGHT-DISMISS FALLBACK FOR DIALOGS */
+        [profilePopup, coverPopup].forEach(dialog => {
+            if (!('closedBy' in HTMLDialogElement.prototype)) {
+                dialog.addEventListener('click', (event) => {
+                    if (event.target !== dialog) return;
+                    const rect = dialog.getBoundingClientRect();
+                    const isDialogContent = (
+                        rect.top <= event.clientY &&
+                        event.clientY <= rect.top + rect.height &&
+                        rect.left <= event.clientX &&
+                        event.clientX <= rect.left + rect.width
+                    );
+                    if (!isDialogContent) {
+                        dialog.close();
+                    }
+                });
+            }
+        });
 
     </script>
 
